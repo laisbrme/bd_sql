@@ -34,7 +34,7 @@ Para utilizar este banco de dados, siga os seguintes passos:
 
 O seguinte diagrama de classes apresenta a estrutura do banco de dados, definindo as entidades, seus atributos e relacionamentos.
 
-![Diagrama de Classes](diagramaClasse)
+![Diagrama de Classes](diagramaClasse.png)
 
 ## Apresentação
 
