@@ -33,16 +33,16 @@ INSERT INTO professor(raprofessor, nome_professor, cpf_professor, data_nasciment
 VALUES ('P001', 'Maria Aparecida Viera', '13476423744', '1986-Jun-05', 'F', 'Mestre', 'mariaaparecida@tudook.com');
 
 INSERT INTO professor(raprofessor, nome_professor, cpf_professor, data_nascimento_professor, sexo, titulacao, email) 
-VALUES ('P002', 'Carlos Alberto Moura', '55674223869', '1969-Dec-07', 'M', 'Mestre', 'carlosalberto@tudook.com');
+VALUES ('P002', 'Carlos Alberto Moura', '55674223869', '1969-Dec-07', 'M', Doutor, 'carlosalberto@tudook.com');
 
 INSERT INTO professor(raprofessor, nome_professor, cpf_professor, data_nascimento_professor, sexo, titulacao, email) 
-VALUES ('P003', 'Martha Vasconcelos', '45632178900', '1990-Jan-12', 'F', 'Mestre', 'marthavasconcelos@tudook.com')
+VALUES ('P003', 'Martha Vasconcelos', '45632178900', '1990-Jan-12', 'F', Doutor, 'marthavasconcelos@tudook.com')
 
 INSERT INTO professor(raprofessor, nome_professor, cpf_professor, data_nascimento_professor, sexo, titulacao, email) 
 VALUES ('P004', 'Diogo Nogueira da Silva', '85236974122', '1989-May-01', 'M', 'Mestre', 'diogonogueira@tudook.com')
 
 INSERT INTO professor(raprofessor, nome_professor, cpf_professor, data_nascimento_professor, sexo, titulacao, email) 
-VALUES ('P005', 'Vanessa Oliveira', '75395145684', '1999-Aug-22', 'F', 'Mestre', 'vanessaoliveira@tudook.com');
+VALUES ('P005', 'Vanessa Oliveira', '75395145684', '1999-Aug-22', 'F', ' ', 'vanessaoliveira@tudook.com');
 
 INSERT INTO professor(raprofessor, nome_professor, cpf_professor, data_nascimento_professor, sexo, titulacao, email) 
 VALUES ('P006', 'Jose Antonio Filho', '65174295399', '1944-Dec-25', 'M', 'Mestre', 'joseantonio@tudook.com');
@@ -50,39 +50,39 @@ VALUES ('P006', 'Jose Antonio Filho', '65174295399', '1944-Dec-25', 'M', 'Mestre
 
 -- Tabela periodo_oferta
 INSERT INTO periodo_oferta(data_inicio, data_fim) 
-VALUES ('2023-Aug-07', '2023-Sep-29')
+VALUES ('2023-Aug-07', '2023-Sep-29');
 
 INSERT INTO periodo_oferta(data_inicio, data_fim) 
-VALUES ('2022-Aug-08', '2022-Sep-30')
+VALUES ('2022-Aug-08', '2022-Sep-30');
 
 INSERT INTO periodo_oferta(data_inicio, data_fim) 
-VALUES ('2024-Aug-05', '2024-Out-05')
+VALUES ('2024-Aug-05', '2024-Oct-05');
 
 INSERT INTO periodo_oferta(data_inicio, data_fim) 
-VALUES ('2024-Feb-05', '2024-Apr-08')
+VALUES ('2024-Feb-05', '2024-Apr-08');
 
 INSERT INTO periodo_oferta(data_inicio, data_fim) 
-VALUES ('2024-May-02', '2024-Jul-06')
+VALUES ('2024-May-02', '2024-Jul-06');
 
 INSERT INTO periodo_oferta(data_inicio, data_fim) 
-VALUES ('2020-May-02', '2020-Jul-06')
+VALUES ('2020-May-02', '2020-Jul-06');
 
 
 -- Tabela curso
 INSERT INTO curso(nome, valor, cargaHoraria, situacao, raProfResponsavel, idPeriodo) 
-VALUES ('Análise e Desenvolvimento de Sistemas', 1600.00, 400, 'Ativo', 'P001', 5)
+VALUES ('Análise e Desenvolvimento de Sistemas', 1600.00, 400, 'Ativo', 'P001', 5);
 
 INSERT INTO curso(nome, valor, cargaHoraria, situacao, raProfResponsavel, idPeriodo) 
-VALUES ('Engenharia de Software', 2100.00, 420, 'Ativo', 'P002', 4)
+VALUES ('Engenharia de Software', 2100.00, 420, 'Ativo', 'P002', 4);
 
 INSERT INTO curso(nome, valor, cargaHoraria, situacao, raProfResponsavel, idPeriodo) 
-VALUES ('Defesa Cibernética', 1300.00, 400, 'Inativo', 'P003', 1)
+VALUES ('Defesa Cibernética', 1300.00, 400, 'Inativo', 'P003', 1);
 
 INSERT INTO curso(nome, valor, cargaHoraria, situacao, raProfResponsavel, idPeriodo) 
-VALUES ('Segurança da Informação', 1700.00, 400, 'Ativo', 'P004', 2)
+VALUES ('Segurança da Informação', 1700.00, 400, 'Ativo', 'P004', 2);
 
 INSERT INTO curso(nome, valor, cargaHoraria, situacao, raProfResponsavel, idPeriodo) 
-VALUES ('Agrotech', 1450.00, 380, 'Inativo', 'P005', 3)
+VALUES ('Agrotech', 1450.00, 380, 'Inativo', 'P005', 3);
 
 
 -- Tabela matricula 
@@ -99,7 +99,7 @@ INSERT INTO matricula(raaluno, dataMatricula, n1, n2, nf, resultado, idcurso)
 VALUES ('E004', '2023-Jan-05', 6, 6, 6, 'Reprovado', 3);
 
 INSERT INTO matricula(raaluno, dataMatricula, n1, n2, nf, resultado, idcurso) 
-VALUES ('E005', '2024-Jul-05', 6.5, 6, 6.25, 'Reprovado');
+VALUES ('E005', '2024-Jul-05', 6.5, 6, 6.25, 'Reprovado', 4);
 
 INSERT INTO matricula(raaluno, dataMatricula, n1, n2, nf, resultado, idcurso) 
 VALUES ('E006', '2024-Jul-05', 6.5, 6, 6.25, 'Reprovado', 2);

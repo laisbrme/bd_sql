@@ -10,19 +10,22 @@ CREATE DATABASE "CentroUni"
     WITH
     OWNER = postgres
     ENCODING = 'UTF8'
+    LC_COLLATE = 'Portuguese_Brazil.1252'
+    LC_CTYPE = 'Portuguese_Brazil.1252'
     LOCALE_PROVIDER = 'libc'
+    TABLESPACE = pg_default
     CONNECTION LIMIT = -1
     IS_TEMPLATE = False;
 
 COMMENT ON DATABASE "CentroUni"
     IS 'Banco de dados do Centro Universitário';
 
-ALTER DATABASE "CentroUni" SET datestyle TO "ISO, DMY";
+-- ALTER DATABASE "CentroUni" SET datestyle TO "ISO, DMY";
 
 
 -- a) Criação de todas as tabelas, considerando todas as constraints;
 CREATE TABLE aluno (
-    raaluno SERIAL ou VARCHAR PRIMARY KEY,
+    raaluno VARCHAR (60) PRIMARY KEY,
     nome_aluno VARCHAR (60) NOT NULL,
     cpf_aluno VARCHAR (11) UNIQUE NOT NULL,
     data_nascimento_aluno DATE NOT NULL,
@@ -31,7 +34,7 @@ CREATE TABLE aluno (
 );
  
 CREATE TABLE professor (
-    raprofessor SERIAL ou VARCHAR PRIMARY KEY,
+    raprofessor VARCHAR (60) PRIMARY KEY,
     nome_professor VARCHAR (60) NOT NULL,
     cpf_professor VARCHAR (11)  UNIQUE NOT NULL,
     data_nascimento_professor DATE NOT NULL,

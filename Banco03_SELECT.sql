@@ -11,17 +11,18 @@ UPDATE professor SET titulacao = 'Mestrado' WHERE titulacao = 'Mestre';
 
 
 -- g) Exclua os períodos letivos de anos anteriores 
+DELETE FROM periodo_oferta WHERE data_fim < '2021-Jan-01'; 
 
 
 -- h) Listar todas as alunas em ordem alfabética 
-SELECT * FROM aluno
+SELECT nome_aluno FROM aluno
 WHERE sexo= 'F'
 ORDER BY nome_aluno;
 
 
 -- i) Listar todos os professores que tenham sua titulação não preenchida;
 SELECT * FROM professor
-WHERE titulacao= ' '
+WHERE titulacao= ' ';
 
 
 -- j) Como exemplo de relatório, listar ra, nome e cpf e data de matrícula de todos os alunos matriculados em um curso específico, listando o nome e carga horária do mesmo;
@@ -33,7 +34,7 @@ WHERE c.nome = 'Engenharia de Software';
 
 
 -- k) Em outro, listar todos o nome do curso , carga_horária e valor, nome do professor, titulação do professor de todos os curso ofertados em um determinado período;
-SELECT c.nome, c.cargahoraria, c.valor, p.nome_professor, p.titulacao, o.data_inicio
+SELECT c.nome AS curso, c.cargahoraria, c.valor, p.nome_professor, p.titulacao, o.data_inicio
 FROM curso c
 JOIN professor p ON c.raProfResponsavel = p.raprofessor
 JOIN periodo_oferta o ON c.idperiodo = o.idperiodooferta
@@ -50,11 +51,11 @@ WHERE p.raprofessor = 'P002';
 
 
 -- m) Gerar o boletim do aluno, com ra, nome, cpf do aluno, nome do curso, nota final e resultado final de todos os alunos aprovados;
-SELECT m.raaluno, a.nome_aluno, a.cpf_aluno, c.nome, m.nf, m.resultado 
+SELECT m.raaluno, a.nome_aluno, a.cpf_aluno, c.nome AS curso, m.nf, m.resultado 
 FROM matricula m
 JOIN aluno a ON m.raaluno = a.raaluno 
 JOIN curso c ON m.idcurso = c.idcurso 
-WHERE m.resultado = 'Aprovado'
+WHERE m.resultado = 'Aprovado';
 
 
 -- n) Listar a quantidade de alunos por curso em um determinado período de oferta;
