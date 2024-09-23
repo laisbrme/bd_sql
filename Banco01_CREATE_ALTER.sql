@@ -20,8 +20,6 @@ CREATE DATABASE "CentroUni"
 COMMENT ON DATABASE "CentroUni"
     IS 'Banco de dados do Centro Universitário';
 
--- ALTER DATABASE "CentroUni" SET datestyle TO "ISO, DMY";
-
 
 -- a) Criação de todas as tabelas, considerando todas as constraints;
 CREATE TABLE aluno (
@@ -89,5 +87,3 @@ ADD email VARCHAR(60) NOT NULL;
 -- d) Criação de índices para os professores e alunos pelos seus CPFs;
 CREATE INDEX ind_cpf_aluno ON aluno(cpf_aluno);
 CREATE INDEX ind_cpf_professor ON professor(cpf_professor);
-
-

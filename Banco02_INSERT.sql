@@ -33,16 +33,16 @@ INSERT INTO professor(raprofessor, nome_professor, cpf_professor, data_nasciment
 VALUES ('P001', 'Maria Aparecida Viera', '13476423744', '1986-Jun-05', 'F', 'Mestre', 'mariaaparecida@tudook.com');
 
 INSERT INTO professor(raprofessor, nome_professor, cpf_professor, data_nascimento_professor, sexo, titulacao, email) 
-VALUES ('P002', 'Carlos Alberto Moura', '55674223869', '1969-Dec-07', 'M', Doutor, 'carlosalberto@tudook.com');
+VALUES ('P002', 'Carlos Alberto Moura', '55674223869', '1969-Dec-07', 'M', 'Doutorado', 'carlosalberto@tudook.com');
 
 INSERT INTO professor(raprofessor, nome_professor, cpf_professor, data_nascimento_professor, sexo, titulacao, email) 
-VALUES ('P003', 'Martha Vasconcelos', '45632178900', '1990-Jan-12', 'F', Doutor, 'marthavasconcelos@tudook.com')
+VALUES ('P003', 'Martha Vasconcelos', '45632178900', '1990-Jan-12', 'F', 'Doutorado', 'marthavasconcelos@tudook.com')
 
 INSERT INTO professor(raprofessor, nome_professor, cpf_professor, data_nascimento_professor, sexo, titulacao, email) 
 VALUES ('P004', 'Diogo Nogueira da Silva', '85236974122', '1989-May-01', 'M', 'Mestre', 'diogonogueira@tudook.com')
 
 INSERT INTO professor(raprofessor, nome_professor, cpf_professor, data_nascimento_professor, sexo, titulacao, email) 
-VALUES ('P005', 'Vanessa Oliveira', '75395145684', '1999-Aug-22', 'F', ' ', 'vanessaoliveira@tudook.com');
+VALUES ('P005', 'Vanessa Oliveira', '75395145684', '1999-Aug-22', 'F', 'Mestre', 'vanessaoliveira@tudook.com');
 
 INSERT INTO professor(raprofessor, nome_professor, cpf_professor, data_nascimento_professor, sexo, titulacao, email) 
 VALUES ('P006', 'Jose Antonio Filho', '65174295399', '1944-Dec-25', 'M', 'Mestre', 'joseantonio@tudook.com');
