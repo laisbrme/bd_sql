@@ -42,7 +42,7 @@ INSERT INTO professor(raprofessor, nome_professor, cpf_professor, data_nasciment
 VALUES ('P004', 'Diogo Nogueira da Silva', '85236974122', '1989-May-01', 'M', 'Mestre', 'diogonogueira@tudook.com')
 
 INSERT INTO professor(raprofessor, nome_professor, cpf_professor, data_nascimento_professor, sexo, titulacao, email) 
-VALUES ('P005', 'Vanessa Oliveira', '75395145684', '1999-Aug-22', 'F', 'Mestre', 'vanessaoliveira@tudook.com');
+VALUES ('P005', 'Vanessa Oliveira', '75395145684', '1999-Aug-22', 'F', ' ', 'vanessaoliveira@tudook.com');
 
 INSERT INTO professor(raprofessor, nome_professor, cpf_professor, data_nascimento_professor, sexo, titulacao, email) 
 VALUES ('P006', 'Jose Antonio Filho', '65174295399', '1944-Dec-25', 'M', 'Mestre', 'joseantonio@tudook.com');
