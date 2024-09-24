@@ -15,7 +15,7 @@ DELETE FROM periodo_oferta WHERE data_fim < '2021-Jan-01';
 
 
 -- h) Listar todas as alunas em ordem alfabética 
-SELECT nome_aluno FROM aluno
+SELECT raaluno, nome_aluno, email FROM aluno
 WHERE sexo= 'F'
 ORDER BY nome_aluno;
 
