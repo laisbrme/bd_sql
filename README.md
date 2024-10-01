@@ -6,7 +6,7 @@ Atividade avaliativa para a disciplina Back-End Developer - Conhecendo Banco de 
 
 ## Status do Projeto
 
-> Status: em desenvolvimento.
+> Status: Concluido.
 
 ## Objetivo
 
@@ -40,9 +40,7 @@ O seguinte diagrama de classes apresenta a estrutura do banco de dados, definind
 
 O vídeo apresenta o diagrama de classes do cenário e demonstra a criação e a estrutura do banco de dados no pgAdmin, ferramenta gráfica para administração do PostgreSQL.
 
-[Link para o vídeo de apresentação em breve]
-
-<!-- [![Watch the video](https://img.youtube.com/vi/WKR7pHkXfps/hqdefault.jpg)]( https://youtu.be/WKR7pHkXfps) -->
+[![Watch the video](https://img.youtube.com/vi/qxl7kqFrU_U/hqdefault.jpg)](https://youtu.be/qxl7kqFrU_U)
 
 ## Colaboradores
 
@@ -51,5 +49,3 @@ Este projeto foi desenvolvido graças aos colaboradores:
 <a href="https://github.com/laisbrme"><img src="https://avatars.githubusercontent.com/u/52614305?s=64&v=4" height="50" style="border-radius: 50px;" /> </a>
 <a href="https://github.com/RhaisaJusto"><img src="https://avatars.githubusercontent.com/u/163946245?s=64&v=4" height="50" style="border-radius: 50px;" /> </a>
 <a href="https://github.com/leonardopontes91"><img src="https://avatars.githubusercontent.com/u/163802559?s=64&v=4" height="50" style="border-radius: 50px;" /> </a>
-
-<!-- git commit -m ":pencil: docs: Atualização do README" -->
